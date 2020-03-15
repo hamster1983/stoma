@@ -1,0 +1,51 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+.interes {
+	background-color: #eeeeee;
+	padding: 30px 15px 15px;
+}
+.interes h3 {
+	text-align: center;
+	font-weight: bold;
+}
+.int-wrap {
+	max-width: 1005px;
+	margin: 0 auto;
+}
+.int-item {
+	padding: 30px;
+	background-color: #a3d3d9;
+	width: 305px;
+	height: 105px;
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.int-item.dioksid {
+	padding-right: 0;
+}
+.int-item img {
+	align-self: center;
+	max-height: 60px;
+	margin-right: 10px;
+}
+.int-item img.protezy {
+	margin-right: 50px;
+}
+.int-item p {
+	text-align: center;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0;
+}
+@media (max-width: 991px) {
+	.int-item {
+		margin: 15px 10px;
+	}
+}

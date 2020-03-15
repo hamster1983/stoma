@@ -1,0 +1,24 @@
+top block:
+
+fon - #eeeeee
+block - #a3d3d9, 305x105, margin-bottom: 60
+wrapper - 1005
+
+
+
+middle block:
+
+fon - #a3d3d9
+container - 1170
+counter - #f2c4b3, 405x105
+counter item - #ebebeb, 40x40
+picture - 405x300
+price - 505x55, discount - 240x55
+
+
+
+bottom-block:
+
+wrapper - #a3d3d9, 945
+picture - 180x180
+button - #f2c4b3, 340x60
