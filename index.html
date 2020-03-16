@@ -4,12 +4,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Стоматология</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
 	<br /><br />
+
 	<section class="interes">
 		<h3>Вас может заинтересовать</h3>
 		<div class="int-wrap d-flex flex-wrap justify-content-center justify-content-lg-between">
@@ -39,6 +41,105 @@
 			</div>
 		</div>
 	</section>
+	
+	<br /><br />
+	
+	<section class="akcia">
+		<div class="container d-flex flex-wrap flex-lg-nowrap">
+			<div class="counter-wrap">
+				<img src="img/counter-pic.jpg" alt="" class="counter-pic" />
+				<div class="counter">
+					<p class="mb-1">до конца акции осталось:</p>
+					<div class="counter-items d-flex justify-content-center">
+						<div class="counter-item days"></div><div class="colon">:</div>
+						<div class="counter-item hours"></div><div class="colon">:</div>
+						<div class="counter-item min"></div><div class="colon">:</div>
+						<div class="counter-item sec"></div>
+					</div>
+					<div class="labels d-flex justify-content-center">
+						<p>дней</p>
+						<p>часов</p>
+						<p>минут</p>
+						<p>секунд</p>
+					</div>
+				</div>
+			</div>
+			<div class="akcia-details">
+				<h3 class="pt-3 pt-lg-0">Бесплатная консультация хирурга-имплантолога и&nbsp;ортопеда-стоматолога</h3>
+				<p class="zapis">Запишитесь прямо сейчас и получите подробную и визуализированную консультацию имплантолога</p>
+				<div class="price-wrap d-flex justify-content-center">
+					<div class="price"><b>Цена по акции:</b> &nbsp;&nbsp; <s>2500&nbsp;p</s> &nbsp;&nbsp; <b>0&nbsp;р</b></div>
+					<div class="discount d-flex justify-content-around">
+						<img src="img/percent.png" alt="" /> <b>Скидка 100%</b>
+					</div>
+				</div>
+				<form class="akcia-form py-4">
+					<h5>Акция интересна?</h5>
+					<div class="form-row">
+						<div class="col-sm-6 col-md-4">
+							<input type="text" name="name" class="form-control" placeholder="Введите Ваше имя:" required>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<input type="text" name="phone" class="form-control" placeholder="Номер телефона:" required>
+						</div>
+						<div class="col-md-4">
+							<input type="submit" name="submit" class="form-control" value="ОТПРАВИТЬ ЗАЯВКУ" disabled>
+						</div>
+					</div>
+					<input type="checkbox" id="personal-data">
+					<label for="personal-data">Даю согласие на обработку персональных данных</label>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<br /><br />
+	
+	<section class="doctor pt-4 pb-2 pl-3 pl-sm-5 pr-3 d-flex flex-wrap flex-sm-nowrap justify-content-center">
+		<div class="doctor-pic">
+			<img src="img/doctor-pic.jpg" alt="" />
+			<p class="doctor-icon d-flex pt-3 pb-0">
+				<img src="img/doctor-icon.png" alt="" />
+				<span><b>12 лет</b><br />Клинический<br />стаж</span>
+			</p>
+		</div>
+		<div class="doctor-info">
+			<p>Эксперт статьи, которую Вы читаете:</p>
+			<h3>Потапов Максим Борисович</h3>
+			<p>Стоматолог-хирург, имплантолог, челюстно-лицевой хирург, ведущий специалист сети НоваДент</p>
+			<button data-toggle="modal" data-target="#free-consult">Бесплатная консультация</button>
+		</div>
+	</section>
+	
+	<div class="modal fade" id="free-consult" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog mt-5" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center font-weight-bold">Введите контакты для отправки информации</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body p-5">
+					<form>
+						<div class="form-row">
+							<div class="col-12 py-2">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+							</div>
+							<div class="col-12 py-2">
+								<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
+							</div>
+							<div class="col-12 py-2">
+								<input type="submit" name="submit" class="form-control" value="ОТПРАВИТЬ ЗАЯВКУ">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
 
 	<script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/inputmask.min.js"></script>

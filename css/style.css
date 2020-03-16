@@ -49,3 +49,242 @@ body {
 		margin: 15px 10px;
 	}
 }
+
+.akcia {
+	background-color: #a3d3d9;
+	padding: 25px 0;
+}
+.akcia .container {
+	max-width: 1170px;
+}
+.counter-wrap {
+	max-width: 405px;
+	flex-shrink: 0;
+}
+@media (max-width: 991px) {
+	.counter-wrap {
+		flex-shrink: 1;
+		margin: 0 auto;
+	}
+}
+.counter-wrap img {
+	max-width: 100%;
+}
+.counter-pic {
+	display: block;
+	max-width: 100%;
+}
+.counter {
+	padding: 5px;
+	background-color: #f2c4b3;
+	text-align: center;
+}
+.counter-item {
+	width: 82px;
+	height: 40px;
+	box-shadow: inset 0 0 5px silver;
+	background-color: #ebebeb;
+	position: relative;
+	font-size: 27px;
+	letter-spacing: 25px;
+	padding-left: 14px;
+}
+.counter-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	background-color: #f2c4b3;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0 0 5px silver;
+}
+.counter .colon {
+	font-size: 24px;
+}
+.counter .colon:nth-of-type(2) {
+	padding-right: .5px;
+}
+.counter .colon:nth-of-type(6) {
+	padding-left: .5px;
+}
+.counter .labels p {
+	width: 82px;
+	margin: 0 3px;
+}
+@media (max-width: 420px) {
+	.akcia .container {
+		padding: 0;
+	}
+	.counter .colon {
+		font-size: 18px;
+	}
+	.counter-item {
+		width: 60px;
+		height: 30px;
+		font-size: 20px;
+		letter-spacing: 17px;
+		padding-left: 10px;
+	}
+	.counter .labels p {
+		width: 60px;
+		margin: 0 2px;
+	}
+}
+.akcia-details {
+	padding: 0 15px;
+}
+.akcia-details h3 {
+	font-weight: bold;
+}
+.akcia-details .zapis {
+	padding: 15px 0 10px 20px;
+	font-size: 18px;
+}
+.akcia-details .price {
+	background-color: white;
+	max-width: 500px;
+	text-align: center;
+	padding: 12px;
+	font-size: 20px;
+	flex-grow: 1;
+}
+.akcia-details .discount {
+	background-color: #f2c4b3;
+	margin-left: 5px;
+	max-width: 230px;
+	flex-grow: 1;
+	font-size: 20px;
+	padding: 5px 15px;
+}
+.akcia-details .discount img {
+	align-self: center;
+}
+.akcia-details .discount b {
+	align-self: center;
+}
+@media (max-width: 600px) {
+	.price-wrap {
+		flex-wrap: wrap;
+	}
+	.akcia-details .discount {
+		margin: 5px 0;
+	}
+}
+.akcia-form h5 {
+	font-weight: bold;
+	padding: 0 10px;
+}
+.form-row [class^="col"] {
+	padding: 2.5px;
+}
+.akcia-form input {
+	border-radius: 0;
+	border: none;
+	height: 52px;
+}
+.akcia-form [type="submit"] {
+	background-color: #f2c4b3;
+	color: black;
+	font-weight: bold;
+	transition: .5s;
+	opacity: .5;
+}
+#personal-data {
+	display: none;
+}
+label[for="personal-data"] {
+	padding: 15px 0 15px 30px;
+	position: relative;
+}
+label[for="personal-data"]:before {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	box-shadow: inset 0 0 5px silver;
+	background-color: #ebebeb;
+	position: absolute;
+	left: -2px;
+}
+label[for="personal-data"]:after {
+	content: '';
+	width: 20px;
+	height: 10px;
+	transform: rotate(-45deg);
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	position: absolute;
+	left: 1px;
+	top: 20px;
+	display: none;
+}
+#personal-data:checked ~ label[for="personal-data"]:after {
+	display: block;
+}
+
+.doctor {
+	background-color: #a3d3d9;
+	max-width: 945px;
+	margin: 0 auto;
+}
+.doctor-icon img {
+	margin-right: 30px;
+	align-self: center;
+}
+.doctor-icon span {
+	line-height: 20px;
+}
+.doctor-icon span b {
+	font-size: 20px;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+.doctor-info {
+	padding: 10px 15px 0 100px;
+}
+.doctor-info p {
+	font-size: 19px;
+	line-height: 22px;
+}
+.doctor-info h3 {
+	text-decoration: underline;
+	margin: 30px 0;
+}
+.doctor-info button {
+	background-color: #f2c4b3;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	outline: none !important;
+	text-transform: uppercase;
+	padding: 15px 25px;
+	font-size: 20px;
+	margin: 25px 0 10px;
+}
+@media (max-width: 767px) {
+	.doctor-icon img {
+		margin-right: 10px;
+	}
+	.doctor-info {
+		padding-left: 15px;
+	}
+}
+@media (max-width: 575px) {
+	.doctor-info button {
+		display: block;
+		margin: 25px auto 10px;
+	}
+}
+#free-consult input {
+	border-radius: 0;
+	height: 55px;
+}
+#free-consult [type="submit"] {
+	background-color: #f2c4b3;
+	color: black;
+	font-weight: bold;
+	border: none;
+}
